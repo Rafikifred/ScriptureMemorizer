@@ -1,0 +1,14 @@
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.AssemblyInfoInputs.cache
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.AssemblyInfo.cs
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.csproj.CoreCompileInputs.cache
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\bin\Debug\net9.0\ScriptureMemorizer.exe
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\bin\Debug\net9.0\ScriptureMemorizer.deps.json
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\bin\Debug\net9.0\ScriptureMemorizer.runtimeconfig.json
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\bin\Debug\net9.0\ScriptureMemorizer.dll
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\bin\Debug\net9.0\ScriptureMemorizer.pdb
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.dll
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\refint\ScriptureMemorizer.dll
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.pdb
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.genruntimeconfig.cache
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ref\ScriptureMemorizer.dll
