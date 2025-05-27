@@ -14,16 +14,16 @@ public class Scripture
         _random = new Random();
 
         string[] splitWords = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        foreach (var w in splitWords)
+        foreach (string word in splitWords)
         {
-            _words.Add(new Word(w));
+            _words.Add(new Word(word));
         }
     }
 
     public void Display()
     {
-        Console.WriteLine(_reference.ToString());
-        foreach (var word in _words)
+        Console.WriteLine(_reference.GetDisplayText());
+        foreach (Word word in _words)
         {
             Console.Write(word.GetDisplayText() + " ");
         }
@@ -32,23 +32,25 @@ public class Scripture
 
     public void HideRandomWords(int count)
     {
-        var notHiddenWords = _words.FindAll(w => !w.IsHidden);
-        int hideCount = Math.Min(count, notHiddenWords.Count);
+        List<Word> visibleWords = _words.FindAll(w => !w.IsHidden());
 
-        for (int i = 0; i < hideCount; i++)
+        int wordsToHide = Math.Min(count, visibleWords.Count);
+        for (int i = 0; i < wordsToHide; i++)
         {
-            int index = _random.Next(notHiddenWords.Count);
-            notHiddenWords[index].Hide();
-            notHiddenWords.RemoveAt(index);  // avoid hiding same word twice this turn
+            int index = _random.Next(visibleWords.Count);
+            visibleWords[index].Hide();
+            visibleWords.RemoveAt(index); // ensure a word isn't hidden twice in one round
         }
     }
 
     public bool IsFullyHidden()
     {
-        foreach (var word in _words)
+        foreach (Word word in _words)
         {
-            if (!word.IsHidden)
+            if (!word.IsHidden())
+            {
                 return false;
+            }
         }
         return true;
     }

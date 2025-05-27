@@ -21,7 +21,7 @@ public class Reference
         _endVerse = endVerse;
     }
 
-    public override string ToString()
+    public string GetDisplayText()
     {
         if (_startVerse == _endVerse)
         {

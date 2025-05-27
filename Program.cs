@@ -1,45 +1,57 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        // Creativity: multiple scriptures can be added here for random choice.
-        var scriptures = new Scripture[]
+        Console.Title = "Scripture Memorizer";
+
+        // Creativity: Add multiple scriptures for variety.
+        List<Scripture> scriptures = new List<Scripture>
         {
             new Scripture(
                 new Reference("John", 3, 16),
                 "For God so loved the world that he gave his one and only Son, " +
                 "that whoever believes in him shall not perish but have eternal life."),
+            
             new Scripture(
                 new Reference("Proverbs", 3, 5, 6),
                 "Trust in the Lord with all your heart and lean not on your own understanding; " +
-                "in all your ways submit to him, and he will make your paths straight.")
+                "in all your ways submit to him, and he will make your paths straight."),
+            
+            new Scripture(
+                new Reference("2 Nephi", 2, 25),
+                "Adam fell that men might be; and men are, that they might have joy.")
         };
 
+        // Randomly select one scripture
         Random rand = new Random();
-        Scripture scripture = scriptures[rand.Next(scriptures.Length)];
+        Scripture selectedScripture = scriptures[rand.Next(scriptures.Count)];
 
+        // Main loop
         while (true)
         {
             Console.Clear();
-            scripture.Display();
+            selectedScripture.Display();
 
-            if (scripture.IsFullyHidden())
+            // Exit if all words are hidden
+            if (selectedScripture.IsFullyHidden())
             {
-                Console.WriteLine("All words are hidden. Well done!");
+                Console.WriteLine("\n✅ All words are hidden. Great job!");
                 break;
             }
 
-            Console.Write("Press Enter to hide words or type 'quit' to exit: ");
+            Console.Write("\nPress [Enter] to hide more words or type 'quit' to exit: ");
             string? input = Console.ReadLine();
 
-            if (input?.ToLower() == "quit")
+            if (input?.Trim().ToLower() == "quit")
             {
+                Console.WriteLine("\n👋 Thanks for using Scripture Memorizer. Goodbye!");
                 break;
             }
 
-            scripture.HideRandomWords(3);
+            selectedScripture.HideRandomWords(3); // Hide 3 more words
         }
     }
 }

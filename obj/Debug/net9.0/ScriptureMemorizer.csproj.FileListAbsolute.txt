@@ -12,3 +12,4 @@ C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\refint\Scripture
 C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.pdb
 C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.genruntimeconfig.cache
 C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ref\ScriptureMemorizer.dll
+C:\Users\Cyusa tech\Desktop\ScriptureMemorizer\obj\Debug\net9.0\ScriptureMemorizer.sourcelink.json
